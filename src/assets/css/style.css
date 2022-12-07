@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.6em;
+  color: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-container {
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.table-cebra {
+  border-top: solid 1px #ccc;
+  border-spacing: 0;
+}
+
+.table-cebra thead th {
+  background-color: #333;
+  color: white;
+}
+
+.table-cebra th,
+.table-cebra td {
+  /* border-right: 1px solid #ccc; */
+  min-width: 150px;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.table-cebra th:last-child,
+.table-cebra td:last-child {
+  border-right: 0;
+}
+
+.table-cebra td {
+  border-bottom: 1px solid #ccc;
+}
+
+.table-cebra tbody tr {
+  background-color: white;
+}
+
+.table-cebra tbody tr:nth-child(2n) {
+  background-color: #f2f2f2;
+}
+
+.table-container {
+  max-width: 100%;
+  overflow-x: scroll;
+  /* border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc; */
+}
+
+.table-cebra tbody tr td:first-child,
+.table-cebra thead tr th:first-child {
+  position: sticky;
+  position: -webkit-sticky;
+  z-index: 2;
+  left: 0;
+  /* border-right: 1px solid #ccc; */
+}
+
+.table-cebra tbody tr td:nth-child(2),
+.table-cebra thead tr th:nth-child(2) {
+  position: sticky;
+  position: -webkit-sticky;
+  z-index: 2;
+  left: 150px;
+  border-right: 1px solid #ccc;
+}
+
+.table-cebra tbody tr td:last-child,
+.table-cebra thead tr th:last-child {
+  position: sticky;
+  position: -webkit-sticky;
+  z-index: 2;
+  right: 0;
+  border-left: 1px solid #ccc;
+}
+
+.table-cebra tbody tr td:first-child,
+.table-cebra tbody tr td:last-child {
+  background-color: white;
+}
+
+.table-cebra tbody tr:nth-child(2n) td:first-child,
+.table-cebra tbody tr:nth-child(2n) td:last-child {
+  background-color: #f2f2f2;
+}
+
+.table-cebra tbody tr td:first-child,
+.table-cebra tbody tr td:last-child {
+  background-color: white;
+}
+
+.table-cebra tbody tr td:nth-child(2) {
+  background-color: white;
+}
+
+.table-cebra tbody tr:nth-child(2n) td:nth-child(2) {
+  background-color: #f2f2f2;
+}
+
+/* Tamaño del scroll */
+.table-container::-webkit-scrollbar {
+  width: 37px;
+  height: 17px;
+}
+
+ /* Estilos barra (thumb) de scroll */
+.table-container::-webkit-scrollbar-thumb {
+  background: #245E8E;
+  border-radius: 11px;
+}
+
+.table-container::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+  background: #245E8E;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+ /* Estilos track de scroll */
+.table-container::-webkit-scrollbar-track {
+  background: #F2F2F2;
+}
+
+.table-container::-webkit-scrollbar-track:hover, 
+.table-container::-webkit-scrollbar-track:active {
+  background: #F2F2F2;
+}
